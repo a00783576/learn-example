@@ -1,1 +1,1 @@
-module.exports = 'Test2 v2 change';
+module.exports = 'Test2 v2';
