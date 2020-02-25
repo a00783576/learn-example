@@ -1,0 +1,48 @@
+0 silly argv {
+0 silly argv   _: [ 'version' ],
+0 silly argv   lernaVersion: '3.20.2',
+0 silly argv   '$0': '..\\..\\..\\..\\AppData\\Roaming\\npm\\node_modules\\lerna\\cli.js'
+0 silly argv }
+1 notice cli v3.20.2
+2 verbose rootPath C:\Users\a.gutierrez.sanchez\Desktop\Arturo\MicroFrontEnd\lerna-example
+3 info current version 1.1.2-alpha.0
+4 silly isAnythingCommitted
+5 verbose isAnythingCommitted 1
+6 silly currentBranch
+7 verbose currentBranch master
+8 silly remoteBranchExists
+9 silly isBehindUpstream
+10 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 1
+11 silly hasTags
+12 verbose hasTags true
+13 silly git-describe.sync "v1.1.2-1-g8b64fa8" => {"lastTagName":"v1.1.2","lastVersion":"v1.1.2","refCount":"1","sha":"8b64fa8","isDirty":false}
+14 info Looking for changed packages since v1.1.2
+15 silly checking diff packages/test1
+16 silly no diff found in test1
+17 silly checking diff packages/test2
+18 silly no diff found in test2
+19 silly checking diff packages/test3
+20 silly found diff in packages/test3/node_modules/test2/package.json
+21 verbose filtered diff [ 'packages/test3/node_modules/test2/package.json' ]
+22 verbose updated test3
+23 verbose git-describe undefined => "v1.1.2-1-g8b64fa8"
+24 silly git-describe parsed => {"lastTagName":"v1.1.2","lastVersion":"v1.1.2","refCount":"1","sha":"8b64fa8","isDirty":false}
+25 info execute Skipping releases
+26 silly lifecycle No script for "preversion" in "root", continuing
+27 silly lifecycle No script for "preversion" in "test3", continuing
+28 silly lifecycle No script for "version" in "test3", continuing
+29 silly lifecycle No script for "version" in "root", continuing
+30 silly gitAdd [
+30 silly gitAdd   'C:\\Users\\a.gutierrez.sanchez\\Desktop\\Arturo\\MicroFrontEnd\\lerna-example\\packages\\test3\\package.json',
+30 silly gitAdd   'C:\\Users\\a.gutierrez.sanchez\\Desktop\\Arturo\\MicroFrontEnd\\lerna-example\\lerna.json'
+30 silly gitAdd ]
+31 silly gitCommit v1.1.2
+32 verbose git [ 'commit', '-m', 'v1.1.2' ]
+33 silly gitTag v1.1.2
+34 verbose git [ 'tag', 'v1.1.2', '-m', 'v1.1.2' ]
+35 error Error: Command failed: git tag v1.1.2 -m v1.1.2
+35 error fatal: tag 'v1.1.2' already exists
+35 error
+35 error     at makeError (C:\Users\a.gutierrez.sanchez\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:174:9)
+35 error     at C:\Users\a.gutierrez.sanchez\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:278:16
+35 error     at processTicksAndRejections (internal/process/task_queues.js:93:5)
